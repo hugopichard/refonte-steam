@@ -1,2 +1,2 @@
 import "bootstrap";
-// import "./hello_react.jsx"
+// import "./react/hello_react.jsx"
