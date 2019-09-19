@@ -1,0 +1,146 @@
+.index-wrapper {
+  background: url("https://store.steampowered.com/public/images/v6/colored_body_top2.png") center top no-repeat #1b2838;
+
+
+  .index-banner {
+    height: 450px;
+    background-image: url("https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/f75e7e983523baa691271e36/page_bg_french.jpg?t=1568067960"), linear-gradient(to right, rgb(206, 216, 228) 50%, rgb(206, 216, 228) 50%);
+    background-position: center 0vw;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    .banner-navbar {
+      width: 80%;
+      height: 40px;
+      position: relative;
+      top: 40px;
+      left: 10%;
+      background-color: rgba( 62, 126, 167, 0.8);
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .nav-item {
+        margin: 10px;
+      }
+
+      a {
+        color: #c6d4df;
+        font-size: 14px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .carousel {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 50px;
+    margin-bottom: 50px;
+
+    .carousel-item {
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .special-offers {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0px 50px;
+
+    .special-offer-game {
+      width: 35vw;
+      height: 20vw;
+      background: linear-gradient( to bottom, #ffffff 5%, #abdaf4 95%);
+      margin: 5px;
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+      }
+    }
+  }
+
+  .buttons {
+    margin-bottom: 50px;
+  }
+
+  a.big-button {
+    margin: 0 4px;
+    width: 226px;
+    height: 58px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 56px;
+    color: #66c0f4;
+    text-align: center;
+    background-image: url('https://store.steampowered.com/public/images/v6/home/background_spotlight.jpg');
+    background-position-y: -105px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #000;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .footer {
+    background-color: #000;
+    padding: 25px;
+    text-align: center;
+    font-size: 15px;
+    color: #8f98a0;
+
+    .footer-title {
+      font-family: "Motiva Sans", Sans-serif;
+      font-weight: normal;
+      font-size: 24px;
+      color: #67c1f5;
+      text-align: center;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAeCAYAAAARgF8NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAJUlEQVQoz2NkYGD4z4AHMDEQAKMKhpACFvuyaXgVMI6mh2GkAACV3gOGBNW82QAAAABJRU5ErkJggg==');
+      background-repeat: repeat-x;
+      margin-bottom: 10px;
+      span {
+        background-color: #000;
+        padding: 0 10px;
+      }
+    }
+
+    .footer-button > span {
+      border-radius: 2px;
+      border: none;
+      padding: 1px;
+      margin-bottom: 20px;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none !important;
+      color: #D2E885 !important;
+      background: #a4d007;
+      background: -webkit-linear-gradient( top, #a4d007 5%, #536904 95%);
+      background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+    }
+  }
+}

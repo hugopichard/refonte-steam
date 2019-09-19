@@ -1,0 +1,28 @@
+.navbar-steam {
+  background-color: #171a21;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a, h1 {
+    font-size: 14px;
+    color: #c6d4df;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-brand img {
+    width: 176px;
+    height: 44px;
+  }
+
+}
+
+.navbar-steam .navbar-collapse {
+  flex-grow: 0;
+}
+
