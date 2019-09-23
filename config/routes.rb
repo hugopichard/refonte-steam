@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'games#index'
 
-  get '/home', to: 'pages#home'
-  resources :games, only: [:index, :show]
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # Ici on définit que l'url de base ('/') renvoit le HTML dans app/views/pages/home.html.erb
+  root to: 'pages#home'
+
+  # On peut ajouter d'autres pages comme :
+  # get "/michel", to: 'pages#michel'
 end
