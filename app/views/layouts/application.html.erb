@@ -9,8 +9,38 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
+
+
+
   <body>
-    <%# Navbar ici par exemple %>
+    <div class="home-navbar">
+      <div class="navbarleft">
+        <%= image_tag("/assets/logo.png",  alt: "logo", class: "logo") %>
+        <ul>
+          <li><%= link_to "Boutique", "/", class: "lienli" %></li>
+          <li><%= link_to "Communauté", "#", class: "lienli" %></li>
+          <li><%= link_to "Bibliotheque", "/bibliotheque", class: "lienli" %></li>
+        </ul>
+      </div>
+      <div class="navbarright">
+        <button class="dlbutton" type="button">Télécharger Steam</button>
+        <input type="search" id="site-search" placeholder="Rechercher">
+        <button class="loupebutton"><%= image_tag("/assets/loupe.png",  alt: "loupe", class: "loupe") %></button>
+       <button class="moncomptebutton">
+          <%= image_tag("/assets/moncompte.png",  alt: "moncompte", class: "moncompte") %>
+       </button>
+       <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Mon Compte</a>
+          <a class="dropdown-item" href="#">Mes Téléchargements</a>
+          <a class="dropdown-item" href="#">Whishlist</a>
+          <a class="dropdown-item" href="#">A Propos</a>
+          <a class="dropdown-item" href="#">Support</a>
+          <a class="dropdown-item" href="#">Aide</a>
+        </div>
+      </div>
+    </div>
+
+
 
     <%= yield %>
 
